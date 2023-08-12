@@ -15,9 +15,9 @@ import ASide from "@/views/Apps/ASide.vue";
           <ASide></ASide>
         </el-aside>
         <el-container>
-          <el-main><RouterView/></el-main>
+          <el-main style="min-height: 500px"><RouterView/></el-main>
           <el-footer>
-            <el-text type="info" style="display: flex;justify-content: center">作者:曾子愚 技术:Vue3,Vite,route,ElementUI...</el-text>
+            <el-text type="info" style="display: flex;justify-content: center">作者:曾子愚 技术:Vue3,Vite,route,ElementUI,C#,ASP.NET...</el-text>
           </el-footer>
         </el-container>
       </el-container>

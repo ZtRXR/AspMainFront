@@ -4,15 +4,25 @@
 
 <template>
   <el-menu
-      default-active="2"
-      class="el-menu-vertical-demo">
+      default-active="/"
+      class="el-menu-vertical-demo"
+      :router="true"
+  >
     <!--      @open="handleOpen"-->
     <!--      @close="handleClose"-->
-    <el-menu-item index="4">
+    <el-menu-item index="/">
       <el-icon>
-        <el-icon><House /></el-icon>
+        <el-icon>
+          <House/>
+        </el-icon>
       </el-icon>
       <span>主页</span>
+    </el-menu-item>
+    <el-menu-item index="/gibberish">
+      <el-icon>
+        <Service/>
+      </el-icon>
+      <span>乱语</span>
     </el-menu-item>
     <!--    <el-sub-menu index="1">-->
     <!--      <template #title>-->
@@ -47,7 +57,7 @@
 </template>
 
 <style scoped>
-.el-menu{
+.el-menu {
   width: 100px;
 }
 </style>
